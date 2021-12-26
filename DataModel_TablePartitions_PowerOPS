@@ -1,0 +1,31 @@
+TableName	PartitionName	Mode	State	SourceType	SourceExpression
+Column_Based_Metrics	Column_Based_Metrics-b9d159d4-8490-41dd-a174-fca5499d5190	import	ready	m	let
+    Source = Excel.Workbook(File.Contents("C:\Users\gregkoe\OneDrive - Microsoft\PBI\PowerKPIMatrix_SampleData.xlsx"), null, true),
+    Column_Based_Metrics_Sheet = Source{[Item="Column_Based_Metrics",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(Column_Based_Metrics_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Date", type date}, {"Total Units", type number}, {"Total Units Target", type number}, {"Total Units Prior", type number}, {"Total Units KPI", Int64.Type}, {"Total Units Var", type number}, {"Premium Units", type number}, {"Premium Units Target", type number}, {"Premium Units Prior", type number}, {"Premium Units KPI", Int64.Type}, {"Gross Revenue", type number}, {"Gross Revenue Target", type number}, {"Gross Revenue Prio", type number}, {"Gross Revenue KPI", Int64.Type}, {"Transactions", type number}, {"Transactions Target", type number}, {"Transactions Prior", type number}, {"Transactions KPI", Int64.Type}, {"Active Customers", type number}, {"Active Customers Target", type number}, {"Active Customers Prior", type number}, {"Active Customers KPI", Int64.Type}, {"Avg Price", type number}, {"Avg Price Target", type number}, {"Avg Price Prior", type number}, {"Avg Price KPI", Int64.Type}, {"Returns", type number}, {"Returns Target", type number}, {"Returns Prior", type number}, {"Returns Var", type number}, {"Returns KPI", Int64.Type}, {"Satisfaction", type number}, {"Sat Target", type number}, {"Sat Prior", type number}, {"Sat KPI", Int64.Type}})
+in
+    #"Changed Type"
+DateTableTemplate_6a09b87b-b995-41fe-ab05-6bff85c060bd	DateTableTemplate_6a09b87b-b995-41fe-ab05-6bff85c060bd-2dfeb541-c130-4584-b998-fccaa8854b87	import	ready	calculated	Calendar(Date(2015,1,1), Date(2015,1,1))
+LocalDateTable_fb362bdc-84c5-426d-9781-b517e87960dd	LocalDateTable_fb362bdc-84c5-426d-9781-b517e87960dd-2b0eaf43-9681-4b99-b26c-259ae2725af3	import	ready	calculated	Calendar(Date(Year(MIN('Column_Based_Metrics'[Date])), 1, 1), Date(Year(MAX('Column_Based_Metrics'[Date])), 12, 31))
+Orders	Orders-3cb8cffd-1dca-40da-8255-587a1d7355e3	import	ready	m	let
+    Source = Excel.Workbook(File.Contents("C:\Users\vijay\Downloads\SOP_Samples (1)\SOP_Samples\superstore sales.xlsx"), null, true),
+    Orders_Sheet = Source{[Item="Orders",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(Orders_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Row ID", Int64.Type}, {"Order ID", type text}, {"Order Date", type date}, {"Ship Date", type date}, {"Ship Mode", type text}, {"Customer ID", type text}, {"Customer Name", type text}, {"Segment", type text}, {"Country", type text}, {"City", type text}, {"State", type text}, {"Postal Code", Int64.Type}, {"Region", type text}, {"Product ID", type text}, {"Category", type text}, {"Sub-Category", type text}, {"Product Name", type text}, {"Sales", type number}, {"Quantity", Int64.Type}, {"Discount", type number}, {"Profit", type number}})
+in
+    #"Changed Type"
+LocalDateTable_cc65d314-8c82-44b4-94e7-4d316f341c08	LocalDateTable_cc65d314-8c82-44b4-94e7-4d316f341c08-60e60d9c-509f-4047-a46e-d60ace6cdaba	import	ready	calculated	Calendar(Date(Year(MIN('Orders'[Order Date])), 1, 1), Date(Year(MAX('Orders'[Order Date])), 12, 31))
+LocalDateTable_63a55527-1355-4023-8d3d-dc9fdd5a7a04	LocalDateTable_63a55527-1355-4023-8d3d-dc9fdd5a7a04-3747d6df-8138-4cef-8bc4-065049a7c558	import	ready	calculated	Calendar(Date(Year(MIN('Orders'[Ship Date])), 1, 1), Date(Year(MAX('Orders'[Ship Date])), 12, 31))
+Returns	Returns-cd2cfa76-7659-4037-8863-4301626c354e	import	ready	m	let
+    Source = Excel.Workbook(File.Contents("C:\Users\vijay\Downloads\SOP_Samples (1)\SOP_Samples\superstore sales.xlsx"), null, true),
+    Returns_Sheet = Source{[Item="Returns",Kind="Sheet"]}[Data],
+    #"Changed Type" = Table.TransformColumnTypes(Returns_Sheet,{{"Column1", type text}, {"Column2", type text}})
+in
+    #"Changed Type"
+People	People-855da694-f99d-499b-9f8e-6182771f1519	import	ready	m	let
+    Source = Excel.Workbook(File.Contents("C:\Users\vijay\Downloads\SOP_Samples (1)\SOP_Samples\superstore sales.xlsx"), null, true),
+    People_Sheet = Source{[Item="People",Kind="Sheet"]}[Data],
+    #"Changed Type" = Table.TransformColumnTypes(People_Sheet,{{"Column1", type text}, {"Column2", type text}})
+in
+    #"Changed Type"
