@@ -1,0 +1,20 @@
+Column_Based_Metrics	Premium Units Target Hierarchy	ready	0	Premium Units Target
+Column_Based_Metrics	Premium Units Target Hierarchy	ready	1	Returns
+DateTableTemplate_6a09b87b-b995-41fe-ab05-6bff85c060bd	Date Hierarchy	ready	0	Year
+DateTableTemplate_6a09b87b-b995-41fe-ab05-6bff85c060bd	Date Hierarchy	ready	1	Quarter
+DateTableTemplate_6a09b87b-b995-41fe-ab05-6bff85c060bd	Date Hierarchy	ready	2	Month
+DateTableTemplate_6a09b87b-b995-41fe-ab05-6bff85c060bd	Date Hierarchy	ready	3	Day
+LocalDateTable_fb362bdc-84c5-426d-9781-b517e87960dd	Date Hierarchy	ready	0	Year
+LocalDateTable_fb362bdc-84c5-426d-9781-b517e87960dd	Date Hierarchy	ready	1	Quarter
+LocalDateTable_fb362bdc-84c5-426d-9781-b517e87960dd	Date Hierarchy	ready	2	Month
+LocalDateTable_fb362bdc-84c5-426d-9781-b517e87960dd	Date Hierarchy	ready	3	Day
+Orders	Quantity Hierarchy	ready	0	Quantity
+Orders	Quantity Hierarchy	ready	1	Region
+LocalDateTable_cc65d314-8c82-44b4-94e7-4d316f341c08	Date Hierarchy	ready	0	Year
+LocalDateTable_cc65d314-8c82-44b4-94e7-4d316f341c08	Date Hierarchy	ready	1	Quarter
+LocalDateTable_cc65d314-8c82-44b4-94e7-4d316f341c08	Date Hierarchy	ready	2	Month
+LocalDateTable_cc65d314-8c82-44b4-94e7-4d316f341c08	Date Hierarchy	ready	3	Day
+LocalDateTable_63a55527-1355-4023-8d3d-dc9fdd5a7a04	Date Hierarchy	ready	0	Year
+LocalDateTable_63a55527-1355-4023-8d3d-dc9fdd5a7a04	Date Hierarchy	ready	1	Quarter
+LocalDateTable_63a55527-1355-4023-8d3d-dc9fdd5a7a04	Date Hierarchy	ready	2	Month
+LocalDateTable_63a55527-1355-4023-8d3d-dc9fdd5a7a04	Date Hierarchy	ready	3	Day
