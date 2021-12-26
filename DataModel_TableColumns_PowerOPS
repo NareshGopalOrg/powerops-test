@@ -1,0 +1,99 @@
+TableName	Type	Name	DataType	IsHidden	IsUnique	IsKey	Expression	DataCategory	SourceColumn	FormatString	SummarizeBy	SortByColumn
+Column_Based_Metrics	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+Column_Based_Metrics		Date	dateTime	False	False	False			Date	m/d/yyyy	none	
+Column_Based_Metrics		Total Units Target	double	False	False	False			Total Units Target	#,0	sum	
+Column_Based_Metrics		Total Units Prior	double	False	False	False			Total Units Prior	#,0	sum	
+Column_Based_Metrics		Total Units KPI	int64	False	False	False			Total Units KPI	0	sum	
+Column_Based_Metrics		Total Units Var	double	False	False	False			Total Units Var	0.00%;-0.00%;0.00%	sum	
+Column_Based_Metrics		Premium Units	double	False	False	False			Premium Units	#,0	sum	
+Column_Based_Metrics		Premium Units Target	double	False	False	False			Premium Units Target	#,0	sum	
+Column_Based_Metrics		Premium Units Prior	double	False	False	False			Premium Units Prior	#,0	sum	
+Column_Based_Metrics		Premium Units KPI	int64	False	False	False			Premium Units KPI	0	sum	
+Column_Based_Metrics		Gross Revenue	double	False	False	False			Gross Revenue	\$#,0;(\$#,0);\$#,0	sum	
+Column_Based_Metrics		Gross Revenue Target	double	False	False	False			Gross Revenue Target	\$#,0.###############;(\$#,0.###############);\$#,0.###############	sum	
+Column_Based_Metrics		Gross Revenue Prio	double	False	False	False			Gross Revenue Prio	\$#,0;(\$#,0);\$#,0	sum	
+Column_Based_Metrics		Gross Revenue KPI	int64	False	False	False			Gross Revenue KPI	0	sum	
+Column_Based_Metrics		Transactions	double	False	False	False			Transactions	#,0	sum	
+Column_Based_Metrics		Transactions Target	double	False	False	False			Transactions Target	#,0	sum	
+Column_Based_Metrics		Transactions Prior	double	False	False	False			Transactions Prior	#,0	sum	
+Column_Based_Metrics		Transactions KPI	int64	False	False	False			Transactions KPI	0	sum	
+Column_Based_Metrics		Active Customers	double	False	False	False			Active Customers	#,0	sum	
+Column_Based_Metrics		Active Customers Target	double	False	False	False			Active Customers Target	#,0	sum	
+Column_Based_Metrics		Active Customers Prior	double	False	False	False			Active Customers Prior	#,0	sum	
+Column_Based_Metrics		Active Customers KPI	int64	False	False	False			Active Customers KPI	0	sum	
+Column_Based_Metrics		Avg Price	double	False	False	False			Avg Price	\$#,0.00;(\$#,0.00);\$#,0.00	sum	
+Column_Based_Metrics		Avg Price Target	double	False	False	False			Avg Price Target	\$#,0.00;(\$#,0.00);\$#,0.00	sum	
+Column_Based_Metrics		Avg Price Prior	double	False	False	False			Avg Price Prior	\$#,0.00;(\$#,0.00);\$#,0.00	sum	
+Column_Based_Metrics		Avg Price KPI	int64	False	False	False			Avg Price KPI	0	sum	
+Column_Based_Metrics		Returns	double	False	False	False			Returns	#,0	sum	
+Column_Based_Metrics		Returns Target	double	False	False	False			Returns Target	#,0	sum	
+Column_Based_Metrics		Returns Prior	double	False	False	False			Returns Prior	#,0	sum	
+Column_Based_Metrics		Returns Var	double	False	False	False			Returns Var	0.00%;-0.00%;0.00%	sum	
+Column_Based_Metrics		Returns KPI	int64	False	False	False			Returns KPI	0	sum	
+Column_Based_Metrics		Satisfaction	double	False	False	False			Satisfaction	0.0%;-0.0%;0.0%	sum	
+Column_Based_Metrics		Sat Target	double	False	False	False			Sat Target	0.0%;-0.0%;0.0%	sum	
+Column_Based_Metrics		Sat Prior	double	False	False	False			Sat Prior	0.0%;-0.0%;0.0%	sum	
+Column_Based_Metrics		Sat KPI	int64	False	False	False			Sat KPI	0	sum	
+Column_Based_Metrics		Total Units	double	False	False	False			Total Units	#,0	sum	
+Column_Based_Metrics		ID	int64	False	False	False			ID	0	count	
+Column_Based_Metrics		Country	string	False	False	False			Country		none	
+DateTableTemplate_6a09b87b-b995-41fe-ab05-6bff85c060bd	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+DateTableTemplate_6a09b87b-b995-41fe-ab05-6bff85c060bd	calculatedTableColumn	Date	dateTime	True	False	False		PaddedDateTableDates	[Date]		none	
+DateTableTemplate_6a09b87b-b995-41fe-ab05-6bff85c060bd	calculated	Year	int64	True	False	False	YEAR([Date])	Years			none	
+DateTableTemplate_6a09b87b-b995-41fe-ab05-6bff85c060bd	calculated	MonthNo	int64	True	False	False	MONTH([Date])	MonthOfYear			none	
+DateTableTemplate_6a09b87b-b995-41fe-ab05-6bff85c060bd	calculated	Month	string	True	False	False	FORMAT([Date], "MMMM")	Months			none	MonthNo
+DateTableTemplate_6a09b87b-b995-41fe-ab05-6bff85c060bd	calculated	QuarterNo	int64	True	False	False	INT(([MonthNo] + 2) / 3)	QuarterOfYear			none	
+DateTableTemplate_6a09b87b-b995-41fe-ab05-6bff85c060bd	calculated	Quarter	string	True	False	False	"Qtr " & [QuarterNo]	Quarters			none	QuarterNo
+DateTableTemplate_6a09b87b-b995-41fe-ab05-6bff85c060bd	calculated	Day	int64	True	False	False	DAY([Date])	DayOfMonth			none	
+LocalDateTable_fb362bdc-84c5-426d-9781-b517e87960dd	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+LocalDateTable_fb362bdc-84c5-426d-9781-b517e87960dd	calculatedTableColumn	Date	dateTime	True	False	False		PaddedDateTableDates	[Date]		none	
+LocalDateTable_fb362bdc-84c5-426d-9781-b517e87960dd	calculated	Year	int64	True	False	False	YEAR([Date])	Years			none	
+LocalDateTable_fb362bdc-84c5-426d-9781-b517e87960dd	calculated	MonthNo	int64	True	False	False	MONTH([Date])	MonthOfYear			none	
+LocalDateTable_fb362bdc-84c5-426d-9781-b517e87960dd	calculated	Month	string	True	False	False	FORMAT([Date], "MMMM")	Months			none	MonthNo
+LocalDateTable_fb362bdc-84c5-426d-9781-b517e87960dd	calculated	QuarterNo	int64	True	False	False	INT(([MonthNo] + 2) / 3)	QuarterOfYear			none	
+LocalDateTable_fb362bdc-84c5-426d-9781-b517e87960dd	calculated	Quarter	string	True	False	False	"Qtr " & [QuarterNo]	Quarters			none	QuarterNo
+LocalDateTable_fb362bdc-84c5-426d-9781-b517e87960dd	calculated	Day	int64	True	False	False	DAY([Date])	DayOfMonth			none	
+Orders	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+Orders		Row ID	int64	False	False	False			Row ID	0	count	
+Orders		Order ID	string	False	False	False			Order ID		none	
+Orders		Order Date	dateTime	False	False	False			Order Date	Long Date	none	
+Orders		Ship Date	dateTime	False	False	False			Ship Date	Long Date	none	
+Orders		Ship Mode	string	False	False	False			Ship Mode		none	
+Orders		Customer ID	string	False	False	False			Customer ID		none	
+Orders		Customer Name	string	False	False	False			Customer Name		none	
+Orders		Segment	string	False	False	False			Segment		none	
+Orders		Country	string	False	False	False			Country		none	
+Orders		City	string	False	False	False			City		none	
+Orders		State	string	False	False	False			State		none	
+Orders		Postal Code	int64	False	False	False			Postal Code	0	count	
+Orders		Region	string	False	False	False			Region		none	
+Orders		Product ID	string	False	False	False			Product ID		none	
+Orders		Category	string	False	False	False			Category		none	
+Orders		Sub-Category	string	False	False	False			Sub-Category		none	
+Orders		Product Name	string	False	False	False			Product Name		none	
+Orders		Sales	double	False	False	False			Sales		sum	
+Orders		Quantity	int64	False	False	False			Quantity	0	sum	
+Orders		Discount	double	False	False	False			Discount		sum	
+Orders		Profit	double	False	False	False			Profit		sum	
+LocalDateTable_cc65d314-8c82-44b4-94e7-4d316f341c08	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+LocalDateTable_cc65d314-8c82-44b4-94e7-4d316f341c08	calculatedTableColumn	Date	dateTime	True	False	False		PaddedDateTableDates	[Date]		none	
+LocalDateTable_cc65d314-8c82-44b4-94e7-4d316f341c08	calculated	Year	int64	True	False	False	YEAR([Date])	Years			none	
+LocalDateTable_cc65d314-8c82-44b4-94e7-4d316f341c08	calculated	MonthNo	int64	True	False	False	MONTH([Date])	MonthOfYear			none	
+LocalDateTable_cc65d314-8c82-44b4-94e7-4d316f341c08	calculated	Month	string	True	False	False	FORMAT([Date], "MMMM")	Months			none	MonthNo
+LocalDateTable_cc65d314-8c82-44b4-94e7-4d316f341c08	calculated	QuarterNo	int64	True	False	False	INT(([MonthNo] + 2) / 3)	QuarterOfYear			none	
+LocalDateTable_cc65d314-8c82-44b4-94e7-4d316f341c08	calculated	Quarter	string	True	False	False	"Qtr " & [QuarterNo]	Quarters			none	QuarterNo
+LocalDateTable_cc65d314-8c82-44b4-94e7-4d316f341c08	calculated	Day	int64	True	False	False	DAY([Date])	DayOfMonth			none	
+LocalDateTable_63a55527-1355-4023-8d3d-dc9fdd5a7a04	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+LocalDateTable_63a55527-1355-4023-8d3d-dc9fdd5a7a04	calculatedTableColumn	Date	dateTime	True	False	False		PaddedDateTableDates	[Date]		none	
+LocalDateTable_63a55527-1355-4023-8d3d-dc9fdd5a7a04	calculated	Year	int64	True	False	False	YEAR([Date])	Years			none	
+LocalDateTable_63a55527-1355-4023-8d3d-dc9fdd5a7a04	calculated	MonthNo	int64	True	False	False	MONTH([Date])	MonthOfYear			none	
+LocalDateTable_63a55527-1355-4023-8d3d-dc9fdd5a7a04	calculated	Month	string	True	False	False	FORMAT([Date], "MMMM")	Months			none	MonthNo
+LocalDateTable_63a55527-1355-4023-8d3d-dc9fdd5a7a04	calculated	QuarterNo	int64	True	False	False	INT(([MonthNo] + 2) / 3)	QuarterOfYear			none	
+LocalDateTable_63a55527-1355-4023-8d3d-dc9fdd5a7a04	calculated	Quarter	string	True	False	False	"Qtr " & [QuarterNo]	Quarters			none	QuarterNo
+LocalDateTable_63a55527-1355-4023-8d3d-dc9fdd5a7a04	calculated	Day	int64	True	False	False	DAY([Date])	DayOfMonth			none	
+Returns	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+Returns		Column1	string	False	False	False			Column1		none	
+Returns		Column2	string	False	False	False			Column2		none	
+People	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+People		Column1	string	False	False	False			Column1		none	
+People		Column2	string	False	False	False			Column2		none	
