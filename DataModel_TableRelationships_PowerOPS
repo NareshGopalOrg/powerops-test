@@ -1,0 +1,4 @@
+RelationshipName	FromTable	FromColumn	ToTable	ToColumn	JoinOnDateBehavior	State
+8bbdc678-eb0d-4556-82d1-fcfb79af1989	Column_Based_Metrics	Date	LocalDateTable_fb362bdc-84c5-426d-9781-b517e87960dd	Date	datePartOnly	ready
+bc81aaa2-8a17-4f4f-9473-b8c03767fd04	Orders	Order Date	LocalDateTable_cc65d314-8c82-44b4-94e7-4d316f341c08	Date	datePartOnly	ready
+6e859906-7be6-4862-8568-32973539f573	Orders	Ship Date	LocalDateTable_63a55527-1355-4023-8d3d-dc9fdd5a7a04	Date	datePartOnly	ready
