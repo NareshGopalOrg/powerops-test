@@ -1,0 +1,20 @@
+PageName	VisualId	VisualName	VisualType	CustomVisualFlag	VisualHiddenFlag	X_Coordinate	Y_Coordinate	Z_Coordinate	VisualWidth	VisualHeight	ObjectCount
+Sample	VisualContainer4	slicer	slicer	False	False	304	113	6000	369	66	1
+Sample	16f5702839c2aae7c562	multiKpiEA8DA325489E436991F0E411F2D85FF3	multiKpiEA8DA325489E436991F0E411F2D85FF3	True	False	23	179	7000	813	531	5
+Sample	e9202bbdb89806b6c647	multiKpiEA8DA325489E436991F0E411F2D85FF3	multiKpiEA8DA325489E436991F0E411F2D85FF3	True	False	915	128	8000	275	150	5
+Sample	d21c5a0a11f50bdbfd66	Small Tiles	basicShape	False	False	842	69	0	422	648	0
+Sample	59cc6bf3e91075280022	textbox	textbox	False	False	915	301	1000	275	98	0
+Sample	22a85910ea9f9bdf6db9	image	image	False	False	0	0	2000	177	146	0
+Sample	f0c0dc1c56a252c0de8e	textbox	textbox	False	False	275	0	4000	437	40	0
+Sample	797652f1add8e7c1c150	textbox	textbox	False	False	234	54	5000	509	52	0
+Sample	e21eb33800ac3e5e3873	multiKpiEA8DA325489E436991F0E411F2D85FF3	multiKpiEA8DA325489E436991F0E411F2D85FF3	True	False	913	424	9000	275	153	5
+Sample	0a9fc1a9bda16a2b76d2	textbox	textbox	False	False	913	600	3000	275	57	0
+Basic Instructions	VisualContainer1	Data Fields	textbox	False	False	9	1	0	409	549	0
+Basic Instructions	939e3d348a61e40b1477	2-Series Chart	multiKpiEA8DA325489E436991F0E411F2D85FF3	True	False	748	234	2000	521	202	3
+Basic Instructions	b4229c54b17f1236bc9e	image	image	False	False	472	1	1000	246	564	0
+Basic Instructions	9696d161179e6676c93c	Single Series Chart	multiKpiEA8DA325489E436991F0E411F2D85FF3	True	False	748	0	3000	522	202	2
+Basic Instructions	35eaaa87db6762f1ec65	5-Series Chart	multiKpiEA8DA325489E436991F0E411F2D85FF3	True	False	748	467	4000	521	202	6
+Variations	9970713b838f75e57102	KPI Status	multiKpiEA8DA325489E436991F0E411F2D85FF3	True	False	792	25	0	468	320	5
+Variations	380b4bb6b1d1f58e8d9d	KPI Status	multiKpiEA8DA325489E436991F0E411F2D85FF3	True	False	45	24	1000	735	322	5
+Variations	f9f60cffb1df0dcf1adf	KPI Status	multiKpiEA8DA325489E436991F0E411F2D85FF3	True	False	574	379	2000	635	298	5
+Variations	bb759775bb44dede43e0	KPI Status	multiKpiEA8DA325489E436991F0E411F2D85FF3	True	False	43	375	3000	451	322	4
