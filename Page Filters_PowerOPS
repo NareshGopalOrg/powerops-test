@@ -1,0 +1,3 @@
+CustomVisualID	CustomVisualName	Version	Description	AuthorName	AuthorEmail
+multiKpiEA8DA325489E436991F0E411F2D85FF3	MultiKpi	1.0.0	Shows a KPI metric along with other metrics as sparklines	Microsoft	pbicvsupport@microsoft.com
+gauzeChartD5E2526CA968498DB5FEABE1648E4BDB	gauzeChart	1.4.1	Easy Gauze Charts	Pranshu Agrawal	pranshu.a.11@gmail.com
