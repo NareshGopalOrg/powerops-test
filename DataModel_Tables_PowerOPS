@@ -1,0 +1,9 @@
+TableName	isHidden	isPrivate
+Column_Based_Metrics		isPrivate
+DateTableTemplate_6a09b87b-b995-41fe-ab05-6bff85c060bd	True	isPrivate
+LocalDateTable_fb362bdc-84c5-426d-9781-b517e87960dd	True	isPrivate
+Orders		isPrivate
+LocalDateTable_cc65d314-8c82-44b4-94e7-4d316f341c08	True	isPrivate
+LocalDateTable_63a55527-1355-4023-8d3d-dc9fdd5a7a04	True	isPrivate
+Returns		isPrivate
+People		isPrivate
